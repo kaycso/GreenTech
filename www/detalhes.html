@@ -30,162 +30,68 @@
         <!-- Your main view, should have "view-main" class -->
         <div class="view view-main">
 
-            <!-- TAB BAR-->
-            <div class="toolbar toolbar-bottom">
-                <div class="toolbar-inner display-flex">
-                    <a href="/index/" class="tab-link link active">
-                        <i class="ri-home-5-line"></i>
-                        <span>Home</span>
-                    </a>
-                    <a href="/link2/" class="tab-link link">
-                        <i class="ri-search-2-line"></i>
-                        <span>Busca</span>
-                    </a>
-                    <a href="/link3/" class="tab-link link">
-                        <i class="ri-heart-3-line"></i>
-                        <span>Favoritos</span>
-                    </a>
-                    <a href="/link4/" class="tab-link link">
-                        <i class="ri-user-line"></i>
-                        <span>Usuário</span>
-                    </a>
-                </div>
-            </div>
-
             <!-- Initial Page, "data-name" contains page name -->
             <div data-name="detalhes" class="page color-theme-blue">
+                <!-- TAB BAR -->
+                <div class="toolbar toolbar-bottom">
+                    <div class="toolbar-inner display-flex align-items-center justify-content-center">
+                        <div class="flex-40 text-align-center">
+                            <span class="riscado">1400</span>
+                            <h3 class="price ">R$ 1200</h3>
+                        </div>
+                        <div class="flex-60">
+                            <button class="add-cart">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
 
                 <!-- TOP NAV -->
-                <div class="top-nav">
-                    <h1 class="title-logo"><span>Green</span>Tech</h1>
+                <!-- <div class="top-nav">
+                    <h1 class="title-logo"><span>teste</span>Tech</h1>
                     <a href="#" class="btn-cart" data-count="0">
                         <i class="ri-shopping-bag-line"></i>
                     </a>
-                </div>
-
-                <form>
-                    <input type="text" placeholder="O que você procura?">
-                    <i class="icon-search ri-search-2-line"></i>
-                </form>
+                </div> -->
 
                 <!-- Scrollable page content -->
                 <div class="page-content">
-                    <div class="content-container">
-                        <!-- Swiper propaganda -->
-                        <div class="swiper propaganda">
-                            <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="./img/propaganda.png" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./img/propaganda2.png" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./img/propaganda3.png" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./img/propaganda4.png" alt="">
-                            </div>
-
-                            </div>
-                            <div class="swiper-pagination"></div>
+                    <div class="prod-detail">
+                        <div class="top-buttons">
+                            <a href="/index/"><i class="ri-arrow-left-s-line"></i></a>
+                            <a href="#"><i class="ri-heart-3-line"></i></a>
+                            <a href="#"><i class="ri-share-line"></i></a>
                         </div>
-
-                        <div class="display-flex align-items-center justify-content-space-between">
-                            <h2>Categorias</h2>
-                            <a href="#">Veja todas <i class="mdi mdi-arrow-right"></i></a>
-                        </div>
-
-                        <div class="swiper categorias">
-                            <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <button class="filter-btn active">Todas</button>
-                            </div>
-                            <div class="swiper-slide">
-                                <button class="filter-btn">Smartphones</button>
-                            </div>
-                            <div class="swiper-slide">
-                                <button class="filter-btn">Notebooks</button>
-                            </div>
-                            <div class="swiper-slide">
-                                <button class="filter-btn">Fones de Ouvido</button>
-                            </div>
-                            <div class="swiper-slide">
-                                <button class="filter-btn">Consoles</button>
-                            </div>
-                            <div class="swiper-slide">
-                                <button class="filter-btn">Computador Gamer</button>
-                            </div>
-                            <div class="swiper-slide">
-                                <button class="filter-btn">Tablets</button>
-                            </div>
-
-                            </div>
-                            <div class="swiper-pagination"></div>
-                        </div>
-
-                        <div id="produtos" class="margin-top row display-flex align-items-center justify-content-start">
-                            <div class="item-card">
-                                <a href="#" class="item">
-                                    <div class="img-container">
-                                        <img src="./img/airpod.png" alt="">
-                                    </div>
-                                    <div class="nome-rating">
-                                        <span>AirPods</span>
-                                        <span class="margin-right">
-                                            <i class="mdi mdi-star"></i>
-                                            4.8
-                                        </span>
-                                    </div>
-                                    <div class="price">R$ 299</div>
-                                </a>
-                            </div>
-                            <div class="item-card">
-                                <a href="#" class="item">
-                                    <div class="img-container">
-                                        <img src="./img/xbox.png">
-                                    </div>
-                                    <div class="nome-rating">
-                                        <span>Xbox</span>
-                                        <span class="margin-right">
-                                            <i class="mdi mdi-star"></i>
-                                            4.9
-                                        </span>
-                                    </div>
-                                    <div class="price">R$ 299</div>
-                                </a>
-                            </div>
-                            <div class="item-card">
-                                <a href="#" class="item">
-                                    <div class="img-container">
-                                        <img src="./img/iphone.png">
-                                    </div>
-                                    <div class="nome-rating">
-                                        <span>Xbox</span>
-                                        <span class="margin-right">
-                                            <i class="mdi mdi-star"></i>
-                                            4.9
-                                        </span>
-                                    </div>
-                                    <div class="price">R$ 299</div>
-                                </a>
-                            </div>
-                            <div class="item-card">
-                                <a href="#" class="item">
-                                    <div class="img-container">
-                                        <img src="./img/macbook.png">
-                                    </div>
-                                    <div class="nome-rating">
-                                        <span>Xbox</span>
-                                        <span class="margin-right">
-                                            <i class="mdi mdi-star"></i>
-                                            4.9
-                                        </span>
-                                    </div>
-                                    <div class="price">R$ 299</div>
-                                </a>
+                        <img src="./img/default.png">
+                    </div>
+                    <div class="prod-content-container">
+                        <div class="prod-content">
+                            <div class="prod-title">
+                                <h1>Nome do Produto</h1>
+                                <p class="sale">Promoção</p>
                             </div>
                         </div>
+                        <div class="display-flex align-items-center justify-content-start">
+                            <button class="btn-rates"><i class="mdi mdi-star"></i>4.8</button>
+                            <button class="btn-rates"><i class="ri-thumb-up-fill"></i>90%</button>
+                            <span class="reviews">110reviews</span>
+                        </div>
+                        <div class="display-flex align-items-center">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam voluptates ipsam quibusdam minus repellendus error ipsum! Deleniti beatae quas eveniet explicabo pariatur, officia fugit consectetur quo accusamus possimus repellat non.</p>
+                        </div>
+                        <table>
+                            <tr>
+                                <th>Característica</th>
+                                <th>Detalhes</th>
+                            </tr>
+                            <tr>
+                                <td>Display</td>
+                                <td>Mais Informações sobre o display</td>
+                            </tr>
+                            <tr>
+                                <td>Display</td>
+                                <td>Mais Informações sobre o display</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>

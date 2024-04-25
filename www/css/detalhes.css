@@ -1,0 +1,156 @@
+:root {
+    --branco: #fff;
+    --gelo: #f1f1f1;
+    --verde: #19c463;
+    --preto: #2a2a2a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.prod-detail {
+    background-color: var(--gelo);
+    width: 100%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.prod-detail img {
+    max-width: 400px;
+}
+
+.top-buttons {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-buttons a {
+    width: 40px;
+    height: 40px;
+    background-color: var(--branco);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--preto);
+    border: 1px solid var(--gelo);
+    font-size: 18px;
+}
+
+.top-buttons a:first-child {
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+.top-buttons a:last-child {
+    margin-right: 20px;
+    margin-left: 5px;
+}
+
+.prod-content-container {
+    margin-inline: 20px;
+}
+
+.prod-content {
+    background-color: var(--branco);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.prod-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.prod-title h1 {
+    font-size: 20px;
+}
+
+.prod-title .sale {
+    border-radius: 20px;
+    padding: 5px 20px;
+    background-color: #ef4d4d;
+    color: var(--branco);
+}
+
+.btn-rates {
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding: 5px 10px;
+    background: none;
+    margin-right: 5px;
+    width: 80px;
+    font-size: 16px;
+}
+
+.btn-rates i {
+    margin-right: 5px;
+}
+
+.ri-thumb-up-fill {
+    color: var(--verde);
+}
+
+.reviews {
+    color: gray;
+    align-self: end;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 1px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+
+th {
+    background-color: #ddd;
+}
+
+.flex-40 {
+    flex: 40%;
+}
+
+.flex-60 {
+    flex: 60%;
+}
+
+/* TAB BAR */
+.riscado {
+    text-decoration: line-through;
+}
+
+h3.price {
+    font-size: 22px;
+}
+
+.add-cart {
+    width: 90%;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--verde);
+    color: var(--branco);
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 800;
+}

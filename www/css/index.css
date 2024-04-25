@@ -112,7 +112,7 @@ form {
     position: relative;
 }
 
-input[type="text"] {
+#search {
     width: 90%;
     height: 45px;
     border-radius: 10px;
@@ -175,6 +175,12 @@ input[type="text"] {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.filter-btn.active {
+    background-color: var(--verde);
+    color: var(--branco);
+    border: none;
 }
 
 /* Produtos */

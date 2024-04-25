@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="./lib/framework7-bundle.min.css">
     <!-- CSS PERSONALIZADO PARA MENU-->
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/detalhes.css">
+    <link rel="stylesheet" href="./css/carrinho.css">
     <!--Ícones Material Design-->
     <link rel="stylesheet" href="./css/materialdesignicons.min.css">
     <!--Ícones Remix Icon-->
@@ -31,7 +33,7 @@
         <div class="view view-main">
 
             <!-- TAB BAR-->
-            <div class="toolbar toolbar-bottom">
+            <div id="menuPrincipal" class="toolbar toolbar-bottom">
                 <div class="toolbar-inner display-flex">
                     <a href="/index/" class="tab-link link active">
                         <i class="ri-home-5-line"></i>
@@ -58,13 +60,13 @@
                 <!-- TOP NAV -->
                 <div class="top-nav">
                     <h1 class="title-logo"><span>Green</span>Tech</h1>
-                    <a href="#" class="btn-cart" data-count="0">
+                    <a href="/carrinho/" class="btn-cart" data-count="0">
                         <i class="ri-shopping-bag-line"></i>
                     </a>
                 </div>
 
                 <form>
-                    <input type="text" placeholder="O que você procura?">
+                    <input id="search" type="text" placeholder="O que você procura?">
                     <i class="icon-search ri-search-2-line"></i>
                 </form>
 
@@ -126,7 +128,7 @@
 
                         <div id="produtos" class="margin-top row display-flex align-items-center justify-content-start">
                             <div class="item-card">
-                                <a href="#" class="item">
+                                <a href="/detalhes/" class="item">
                                     <div class="img-container">
                                         <img src="./img/airpod.png" alt="">
                                     </div>
@@ -141,7 +143,7 @@
                                 </a>
                             </div>
                             <div class="item-card">
-                                <a href="#" class="item">
+                                <a href="/detalhes/" class="item">
                                     <div class="img-container">
                                         <img src="./img/xbox.png">
                                     </div>
@@ -156,7 +158,7 @@
                                 </a>
                             </div>
                             <div class="item-card">
-                                <a href="#" class="item">
+                                <a href="/detalhes/#" class="item">
                                     <div class="img-container">
                                         <img src="./img/iphone.png">
                                     </div>
@@ -171,7 +173,7 @@
                                 </a>
                             </div>
                             <div class="item-card">
-                                <a href="#" class="item">
+                                <a href="/detalhes/#" class="item">
                                     <div class="img-container">
                                         <img src="./img/macbook.png">
                                     </div>
